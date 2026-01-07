@@ -10,6 +10,8 @@ int populacao1;
 float area1;
 float pib1;
 int p_turistico1;
+float denPop1;
+float pibPC1;
 
 //variáveis carta 2
 char estado2;
@@ -19,6 +21,8 @@ int populacao2;
 float area2;
 float pib2;
 int p_turistico2;
+float denPop2;
+float pibPC2;
 
 //coleta de inputs
 printf("Fique atento às instruções e preencha corretamente.\n");
@@ -86,7 +90,9 @@ printf("Cidade: %s\n", nome1);
 printf("População: %d\n", populacao1);
 printf("Área: %.3f km2\n", area1);
 printf("PIB: %.3f\n", pib1);
-printf("Pontos turísticos: %d\n\n", p_turistico1);
+printf("Pontos turísticos: %d\n", p_turistico1);
+printf("Densidade populacional: %.3f hab/km2\n", populacao1/area1);
+printf("PIB per Capta: %.3f Reais.\n\n", pib1/populacao1);
 
 //carta2
 printf("Estado: %c\n", estado2);
@@ -96,6 +102,8 @@ printf("População: %d\n", populacao2);
 printf("Área: %.3f km2\n", area2);
 printf("PIB: %.3f\n", pib2);
 printf("Pontos turísticos: %d\n", p_turistico2);
+printf("Densidade populacional: %.3f hab/km2\n", populacao2/area2);
+printf("PIB per Capta: %.3f Reais.\n\n", pib2/populacao2);
 
 
 return 0;
